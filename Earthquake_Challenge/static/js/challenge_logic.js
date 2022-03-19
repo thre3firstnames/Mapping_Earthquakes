@@ -24,7 +24,8 @@ let navNight = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/navigation-n
 // Create the map object with center, zoom level and default layer.
 let map = L.map('mapid', {
 	// center: [40.7, -94.5],
-  center: [33.6, -7.6],
+  //Moved the center point to focus on as much of the map as possible.
+  center: [20.3, -4.0],
 	zoom: 3,
 	layers: [streets]
 });
@@ -149,7 +150,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geoj
     if (magnitude > 6) {
       return "#9400d3";
     }
-    return "#98ee00";
+    return "#ff0000";
   }
 
   // 6. Use the function that determines the radius of the earthquake marker based on its magnitude.
