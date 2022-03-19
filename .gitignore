@@ -1,6 +1,11 @@
 config.py
 config.js
 
+#Module files to ignore
+majorAirports.json
+torontoNeighborhoods.json
+torontoRoutes.json
+/Module_Files
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
